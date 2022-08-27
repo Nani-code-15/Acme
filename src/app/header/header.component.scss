@@ -1,0 +1,65 @@
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border: 1PX solid rgb(175, 175, 175) ;
+  }
+  
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+    border: 0;
+    background: transparent;
+  }
+  .user {
+    font-size: 14px;
+  }
+  mat-toolbar {
+    background: #FFFFFF;
+    border-radius: 20px 0px 0px 0px;
+  }
+  .user-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    &-icon {
+      height: 18px;
+      font-size: 16px;
+    }
+  }
+  
+  ::ng-deep {
+    .mat-menu-content {
+      width: 160px;
+      background-color: #FFFFFF;
+   
+    }
+  }
+  #mat-btn1{
+    padding-right: 850px;
+    text-align: center;
+    font-size: 15px;
+    color: #4D4F5C;
+    font-family: Roboto, sans-serif;
+  }
+  p{
+    padding-right: 800px;
+  }
+  .bell{
+    color: #4D4F5C;
+    padding-left: 70px;
+  }
+.menu-cont{
+  color: black;
+  background-color: #FFFFFF;
+}
+#pro-icon{
+  color: #1c1f22;
+}
+section{
+  background-color: #43425D;
+}
