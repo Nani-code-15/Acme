@@ -7,11 +7,41 @@
       <div id="mat-btn1" class="py-1">
         <i class="fa fa-search"></i> Search transactions, invoices or help
       </div>
-      <div class="bell">
+      <!-- <div class="bell">
         <i class="fa-regular fa-bell"></i>
         
+      </div> -->
+      <div class="not1">
+        <ul class="row m-0 ">
+          <li>
+            <button
+              mat-button
+              [matMenuTriggerFor]="menu1"
+              class="user mt-2 d-flex align-items-center"
+            >
+            <i class="fa-regular fa-bell"></i>
+            </button>
+            <mat-menu class="menu-cont1" #menu1="matMenu">
+              <button class="text-dark" mat-menu-item>
+                <div>
+                  <h6>new customer<span class="float-end">14 Sec ago</span></h6>
+                  <p>Assigned you on the call with Sara</p>
+                </div>
+                 
+              </button>
+              <button class="text-dark" mat-menu-item>
+                <mat-icon id="pro-icon"> <i id="invoice-i" class="fa-solid fa-file-invoice"></i></mat-icon>
+                Billing
+              </button>
+              <button class="text-dark" mat-menu-item>
+                <mat-icon class="text-dark" id="pro-icon">exit_to_app</mat-icon>
+                Logout
+              </button>
+            </mat-menu>
+          </li>
+        </ul>
       </div>
-      
+
       <div class="row mr-2 ml-auto">
         <ul class="row m-0 align-items-center">
           <li>
@@ -20,8 +50,6 @@
               [matMenuTriggerFor]="menu"
               class="user mt-2 d-flex align-items-center"
             >
-              
-  
               User Name
               <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
               <img src="./assets/img/profile-pic-01.jpg" alt="" class="user-image mr-1 p-2" />
