@@ -1,9 +1,8 @@
 mat-toolbar {
     position: sticky;
     top: 0;
-    z-index: 100;
     border: 1PX solid rgb(175, 175, 175) ;
-  }
+       }
   
   ul {
     li {
@@ -20,7 +19,7 @@ mat-toolbar {
   }
   mat-toolbar {
     background: #FFFFFF;
-    border-radius: 20px 0px 0px 0px;
+    
   }
   .user-image {
     border-radius: 50%;
@@ -39,27 +38,157 @@ mat-toolbar {
    
     }
   }
+  ::ng-deep {
+    .menu-cont1 {
+      width: auto;
+      height: auto;
+      background-color: #FFFFFF;
+   
+    }
+  }
   #mat-btn1{
-    padding-right: 850px;
     text-align: center;
     font-size: 15px;
     color: #4D4F5C;
     font-family: Roboto, sans-serif;
   }
-  p{
-    padding-right: 800px;
-  }
-  .bell{
-    color: #4D4F5C;
-    padding-left: 70px;
-  }
-.menu-cont{
-  color: black;
-  background-color: #FFFFFF;
-}
+
+  @media only screen and (max-width: 750px) {
+    .user-dropdown .user-drop{
+      display: none;
+      }
+    .search span{
+      display: none;
+    }
+    }
+
+    @media only screen and (max-width: 750px) {
+      .search .search-icon{
+        margin-left: 180px;
+        }
+      }
+  // .bell{
+  //   color: #4D4F5C;
+  //   padding-left: 70px;
+  // }
+// .menu-cont{
+//   color: black;
+//   background-color: #FFFFFF;
+// }
 #pro-icon{
   color: #1c1f22;
 }
-section{
-  background-color: #43425D;
+// section{
+  
+//   position: sticky;
+//  padding: 0%;
+// }
+.figure img{
+  border-radius: 50%;
+  height: auto;
+  width: 40px;
+}
+.user-details h5{
+  font-size: 14px;
+}
+.user-details span{
+  font-size: 14px;
+  opacity: 0.5;
+}
+.user-details{
+  margin-left: 20px;
+  padding-right: 100px;
+}
+.time-log{
+  font-size: 14px;
+  opacity: 0.5;
+  
+}
+.time-log span{
+  float: right;
+}
+.user1{
+  color: #43425D;
+  padding: 0px 20px 0px 40px;
+}
+.mat-toolbar-single-row{
+  z-index: 5;
+}
+
+// bt
+
+
+
+.icon{
+  cursor: pointer;
+  margin-right: 50px;
+  line-height: 60px
+}
+.icon span{
+  background: #f00;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  vertical-align: top;
+  margin-left: -25px
+}
+.icon i{
+  
+  width: 26px;
+  margin-top: 4px
+}
+.icon:hover{
+  opacity: .7
+}
+.logo{
+  flex: 1;
+  margin-left: 50px;
+  color: #eee;
+  font-size: 20px;
+  font-family: monospace
+}
+.notifications{
+  width: 300px;
+  height: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 63px;
+  right: 62px;
+  border-radius: 5px 0px 5px 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.notifications h2{
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;color: #999
+}
+.notifications h2 span{
+  color: #f00
+}
+.notifications-item{
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 6px 9px;margin-bottom: 0px;
+  cursor: pointer
+}
+.notifications-item:hover{
+  background-color: #eee
+}
+.notifications-item img{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 9px;
+  border-radius: 50%;
+  margin-top: 2px
+}
+.notifications-item .text h4{
+  color: #777;
+  font-size: 16px;
+  margin-top: 3px;
+}
+.notifications-item .text p{
+  color: #aaa;
+  font-size: 12px
 }

@@ -1,56 +1,83 @@
+// overview
+
 .add-bnt{
     background-color:#6763E3 ;
     color: white;
-    padding: 10px;
-    width: 110px;
     border-radius: 5px;
     border: none;
 }
-.add-bnt i{
-    background-color: #514DDC;
-    border-radius: 9px;
-    padding: 3px;
-}
-#add-btn1{
-    padding-left: 110px;
-}
+
+// chart1
+
 #chart1{
-    height: 250px;
+    height: 362px;
+  
 }
+
+// chart2
+
 #chart2{
-   height: 150px;
-   width: 150px;
+  
+   width: 250px;
 }
 .table-responsive{
     color: black;
     text-align: center;
  
 }
-.profile-img{
-    border-radius: 180px;
-    height: 100px;
-    width: 100px;
-   margin-top: 20px;
+.table-responsive i{
+    padding: 7px;
 }
+//  profile
 .card-body1 p{
     color: #43425D;
 }
+
 .card-body1 i{
     color: #43425D;
     padding: 8px;
 }
-.profile-note img{
+.profile-img{
     border-radius: 180px;
-    height: 60px;
-    width: 60px;
+    height: auto;
+    width: 80px;
+   margin-top: 20px;
+}
+.figure img{
+    border-radius: 50%;
+    height: auto;
+    width: 40px;
+}
+.user-details h5{
+    font-size: 14px;
+}
+.user-details span{
+    font-size: 14px;
+    opacity: 0.5;
+}
+.user-details{
+    margin-left: 20px;
+    padding-right: 100px;
+}
+.time-log{
+    font-size: 14px;
+    opacity: 0.5;
+    
+}
+.time-log span{
+    float: right;
+}
+.user{
+    color: #43425D;
+    padding: 0px 20px 0px 40px;
+}
+.text-center i{
+    color: #43425D;
 }
 
-.menu-cont1 p{
-   color: black;
-}
-.not1{
-    width: 229px;
-}
+
+// table
+
 #table-bp{
     
    border: none;
@@ -66,19 +93,47 @@
 }
 .t-div{
     background-color: #fff;
-    padding: 30px;
+    padding: 10px 20px 10px 20px;
     margin-bottom: 70px;
     border: 1px solid rgb(211, 208, 208);
     border-radius: 4px;
-}
-
-
-#video-card{
-    margin-top: 20px;
-}
-.card-body2 img{
-    height: 283px;
-    width: 420px;
-    border-radius: 5px;
     
 }
+#table-bp th{
+    background-color: #F5F6FA    ;
+ }
+ .t-div h3{
+    color: #4D4F5C;
+}
+ 
+//video card
+
+#video-card{
+    margin-top: 25px;
+    height: 360px;
+}
+.card-body2 .yt-video{
+   padding: 20px;
+    
+}
+.yt-video iframe{
+    height:200px;
+    width: 400px;
+    border-radius: 5px;
+}
+.t-div{
+    overflow: scroll;
+}
+
+
+//table mobile responsive
+
+@media only screen and (max-width: 750px) {
+    .px-4{
+      padding-right: 0%;
+      padding-left: 0%;
+      }
+     
+    }
+    
+   

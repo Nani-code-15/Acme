@@ -1,76 +1,152 @@
-<section>
-<mat-toolbar>
-    <mat-toolbar-row class="justify-content-between">
-      <button mat-icon-button (click)="toggleSidebar()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <div id="mat-btn1" class="py-1">
-        <i class="fa fa-search"></i> Search transactions, invoices or help
-      </div>
-      <!-- <div class="bell">
-        <i class="fa-regular fa-bell"></i>
-        
-      </div> -->
-      <div class="not1">
-        <ul class="row m-0 ">
-          <li>
-            <button
-              mat-button
-              [matMenuTriggerFor]="menu1"
-              class="user mt-2 d-flex align-items-center"
-            >
-            <i class="fa-regular fa-bell"></i>
-            </button>
-            <mat-menu class="menu-cont1" #menu1="matMenu">
-              <button class="text-dark" mat-menu-item>
-                <div>
-                  <h6>new customer<span class="float-end">14 Sec ago</span></h6>
-                  <p>Assigned you on the call with Sara</p>
-                </div>
-                 
-              </button>
-              <button class="text-dark" mat-menu-item>
-                <mat-icon id="pro-icon"> <i id="invoice-i" class="fa-solid fa-file-invoice"></i></mat-icon>
-                Billing
-              </button>
-              <button class="text-dark" mat-menu-item>
-                <mat-icon class="text-dark" id="pro-icon">exit_to_app</mat-icon>
-                Logout
-              </button>
-            </mat-menu>
-          </li>
-        </ul>
+<div class="container-fluid">
+  <div class="row">
+    <mat-toolbar>
+    <div class="col-6 d-flex justify-content-start align-items-center">
+        <div class="menu-icon">
+          <button mat-icon-button (click)="toggleSidebar()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+        <form class="d-flex">
+          
+          <input class="form-control me-2" type="search" placeholder="Search transactions, invoices or help" aria-label="Search">
+          
+        </form>
+    </div>
+   
+    <div class="col-6 d-flex justify-content-end align-items-center">
+
+      
+      <div class="icon" id="bell"> <i class="fa-regular fa-bell text-dark"></i></div>
+      <div class="notifications" id="box">
+          <h2>Notifications - <span>2</span></h2>
+          <div class="notifications-item"> <img src="https://i.imgur.com/uIgDDDd.jpg" alt="img">
+              <div class="text">
+                  <h4>Samso aliao</h4>
+                  <p>Samso Nagaro Like your home work</p>
+              </div>
+          </div>
+          <div class="notifications-item"> <img src="https://img.icons8.com/flat_round/64/000000/vote-badge.png" alt="img">
+              <div class="text">
+                  <h4>John Silvester</h4>
+                  <p>+20 vista badge earned</p>
+              </div>
+          </div>
       </div>
 
-      <div class="row mr-2 ml-auto">
-        <ul class="row m-0 align-items-center">
-          <li>
-            <button
-              mat-button
-              [matMenuTriggerFor]="menu"
-              class="user mt-2 d-flex align-items-center"
-            >
-              User Name
-              <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
-              <img src="./assets/img/profile-pic-01.jpg" alt="" class="user-image mr-1 p-2" />
-            </button>
-            <mat-menu class="menu-cont" #menu="matMenu">
-              <button class="text-dark" mat-menu-item>
-                <mat-icon id="pro-icon"> <i class="fa-solid fa-user"></i></mat-icon>
-                My Profile
-              </button>
-              <button class="text-dark" mat-menu-item>
-                <mat-icon id="pro-icon"> <i id="invoice-i" class="fa-solid fa-file-invoice"></i></mat-icon>
-                Billing
-              </button>
-              <button class="text-dark" mat-menu-item>
-                <mat-icon class="text-dark" id="pro-icon">exit_to_app</mat-icon>
-                Logout
-              </button>
-            </mat-menu>
-          </li>
-        </ul>
+
+          <div class="dropdown">
+            <ul class="m-0 align-items-center">
+              <li>
+                <div class="user-dropdown">
+                    <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 d-flex align-items-center">
+                      <div class="user-drop">
+                        <span>User Name</span>
+                        <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+                      </div>
+                      
+                    <div class="user-profile-img">
+                      <img src="./assets/img/profile-pic-01.jpg" alt="" class="user-image mr-1 p-2" />
+                    </div>
+                  </button>
+                </div>
+                
+                <mat-menu class="menu-cont" #menu="matMenu">
+                  <button class="text-dark" mat-menu-item>
+                    <mat-icon id="pro-icon"> <i class="fa-solid fa-user"></i></mat-icon>
+                    My Profile
+                  </button>
+                  <button class="text-dark" mat-menu-item>
+                    <mat-icon id="pro-icon"> <i id="invoice-i" class="fa-solid fa-file-invoice"></i></mat-icon>
+                    Billing
+                  </button>
+                  <button class="text-dark" mat-menu-item>
+                    <mat-icon class="text-dark" id="pro-icon">exit_to_app</mat-icon>
+                    Logout
+                  </button>
+                </mat-menu>
+              </li>
+            </ul>
+          </div>
       </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</section>
+    </mat-toolbar>
+</div>
+
+
+
+<!-- 
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <mat-toolbar>
+          <div class="row">
+            <div class="col-2">
+              <button mat-icon-button (click)="toggleSidebar()">
+                <mat-icon>menu</mat-icon>
+              </button>
+            </div>
+
+            <div class="col-2">
+              <div id="mat-btn1" class="py-1">
+                <i class="fa fa-search"></i> Search transactions, invoices or help
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="not1">
+                <ul class="row m-0 ">
+                  <li>
+                    <button mat-button [matMenuTriggerFor]="menu1" class="user mt-2 d-flex align-items-center">
+                    <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <mat-menu class="menu-cont1" #menu1="matMenu">
+                      <button class="text-dark" mat-menu-item>
+                        <div>
+                          <h6>new customer<span class="float-end">14 Sec ago</span></h6>
+                          <p>Assigned you on the call with Sara</p>
+                        </div>
+                      </button>
+                      <button class="text-dark" mat-menu-item>
+                        <mat-icon id="pro-icon"> <i id="invoice-i" class="fa-solid fa-file-invoice"></i></mat-icon>
+                        Billing
+                      </button>
+                      <button class="text-dark" mat-menu-item>
+                        <mat-icon class="text-dark" id="pro-icon">exit_to_app</mat-icon>
+                        Logout
+                      </button>
+                    </mat-menu>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-4">
+                <div class="row mr-2 ml-auto">
+                  <ul class="row m-0 align-items-center">
+                    <li>
+                      <button mat-button [matMenuTriggerFor]="menu1" class="user mt-2 d-flex align-items-center">
+                        User Name
+                        <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+                        <img src="./assets/img/profile-pic-01.jpg" alt="" class="user-image mr-1 p-2" />
+                      </button>
+                      <mat-menu class="menu-cont" #menu="matMenu">
+                        <button class="text-dark" mat-menu-item>
+                          <mat-icon id="pro-icon"> <i class="fa-solid fa-user"></i></mat-icon>
+                          My Profile
+                        </button>
+                        <button class="text-dark" mat-menu-item>
+                          <mat-icon id="pro-icon"> <i id="invoice-i" class="fa-solid fa-file-invoice"></i></mat-icon>
+                          Billing
+                        </button>
+                        <button class="text-dark" mat-menu-item>
+                          <mat-icon class="text-dark" id="pro-icon">exit_to_app</mat-icon>
+                          Logout
+                        </button>
+                      </mat-menu>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </mat-toolbar>
+    </div>
+  </div> -->

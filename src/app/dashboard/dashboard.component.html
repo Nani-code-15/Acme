@@ -1,195 +1,235 @@
-<div class="container-fluid">
-    <div class="row d-flex page__box p-3 mt-2 text-dark">
-        <div class="col-sm-6"><h2>Overview</h2></div>
-        <div id="add-btn1" class="col-sm-6"><button class="add-bnt float-end">Add Funds <i class="fa-solid fa-plus"></i></button></div>
-    </div>
+<div class="container-fluid px-4">
 
+  <!-- <div class="row-1">
     <div class="row">
-      <div class="col-4">
-          <div class="card radius-10 w-100">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                  <table class="table align-items-center mb-0">
-                    <tr>
-                      <td >Site Traffic  </td>
-                      <td class=" dropdown-toggle text-dark" style="cursor: pointer; float:right ">Last 6 months </td>                    
-                    </tr>
-                  </table>
+        <div class="col-lg-6 col-md-6 col-sm-6 align-self-start"><h2>Overview</h2></div>
+        <div id="add-btn1" class="col-lg-6 col-md-6 col-sm-6 align-self-end"><button class="add-bnt">Add Funds <i class="fa-solid fa-plus"></i></button></div>
+    </div>  
+  </div> -->
+
+  <div class="overview px-3">
+    <div class="row mt-3 mb-3">
+      <div class="col-6 d-flex justify-content-start">
+        <div class="overview-title text-dark">
+          <h2>Overview</h2>
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+        <button class="add-bnt">Add Funds <i class="fa-solid fa-plus"></i></button>
+      </div>
+    </div>
+  </div>
+    
+  <div class="row-2">
+    <div class="row">
+      <!-- chart1 -->
+        <div class="col-lg-4 col-md-12 col-sm-12 order-3 order-lg-2 px-3 my-3">
+            <div class="card radius-10 w-100 ">
+              <div class="card-body">
+                <div id="chart-bd1" class="d-flex align-items-center ">
+                    <table class="table align-items-center mb-0">
+                      <tr>
+                        <td >Site Traffic  </td>
+                        <td class=" dropdown-toggle text-dark" style="cursor: pointer; float:right ">Last 6 months </td>                    
+                      </tr>
+                    </table>
+                 </div>
+                  <div class="chart-container-1">
+                    <canvas id="chart1"></canvas>
+                  </div>
+                    <table class="table align-items-center mb-0">
+                      <tr>
+                        <td><i class="fa-solid fa-circle me-1 " style="color: #80E2FF"></i> Products sold</td>
+                        <td><i class="fa-solid fa-circle me-1" style="color: #B5B3FB"></i>Total views </td>
+                      </tr>
+                    </table>           
               </div>
-              
-                <div class="chart-container-1">
-                  <canvas id="chart1"></canvas>
-                </div>
-                
-                  <table class="table align-items-center mb-0">
-                    
-                    <tr>
-                      <td><i class="fa-solid fa-circle me-1 " style="color: #80E2FF"></i> France <span style="color: #888a98">4260 Sales</span> </td>
-                      <td><i class="fa-solid fa-circle me-1" style="color: #F49FA8"></i>Italy <span style="color: #888a98">4260 Sales</span></td>
-                     
-                    </tr>
-                  
-                  </table>
-             
+            </div>
+        </div>
+
+          <!-- chart2 -->
+        <div class="col-lg-4 col-md-12 col-sm-12 order-3 order-lg-2 px-3 my-3">
+          <div class="card radius-10 overflow-hidden w-100">
+            <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div>
+                <h5 class="mb-0 text-dark">Sales Distribution</h5>
+              </div>
+              <div class="font-22 ms-auto"><i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="chart-container-2">
+              <canvas id="chart2"></canvas>
+            </div>
+            <hr style="color: black;">
+            <div class="table-responsive">
+              <table class="table  mb-4">
+                <tbody>
+                <tr>
+                  <td><i class="fa-solid fa-circle me-1 " style="color: #80E2FF"></i> France <span style="color: #888a98">4260 Sales</span> </td>
+                  <td><i class="fa-solid fa-circle me-1" style="color: #F49FA8"></i>Italy <span style="color: #888a98">3970 Sales</span></td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-circle me-1" style="color: #FFDF94"></i>Japan <span style="color: #888a98">4260 Sales</span></td>
+                  <td><i class="fa-solid fa-circle me-1" style="color: #B5B3FB"></i>Canada <span style="color: #888a98">3970 Sales</span></td>
+                </tr>
+                </tbody>
+              </table>
+              </div>
             </div>
           </div>
-     </div>
-     <div class="col-4">
-      <div class="card radius-10 overflow-hidden w-100">
-        <div class="card-body">
-        <div class="d-flex align-items-center">
-          <div>
-            <h5 class="mb-0 text-dark">Sales Distribution</h5>
-          </div>
-          <div class="font-22 ms-auto"><i class="bx bx-dots-horizontal-rounded"></i>
+        </div>
+         <!-- profile -->
+        <div class="col-lg-4 col-md-12 col-sm-12 order-md-1 order-1 order-lg-3 px-4">
+          <div class="card radius-10 overflow-hidden ">
+              <div class="card-body1   px-5">          
+                <div class="text-center">
+                  <img class="profile-img " src="assets\img\profile-pic-01.jpg" alt="">
+                  <h3 class="text-dark">Nick Herasimenka</h3>
+                  <p>United States</p>
+                </div>
+                <div class="text-center">
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <hr class="text-dark">
+                </div>
+               
+              </div>
+             
+                <div class="user d-flex">
+                  <div class="figure">
+                      <img src="assets\img\profile-pic-03.jpg" alt="">
+                  </div>
+                  <div class="user-details">
+                      <h5>Drew James</h5>
+                      <span>United States</span>
+                  </div>
+                  <div class="time-log">
+                      <span>Mobile : 8715674877</span>
+                  </div>
+                </div>
+              
+              <div class="user d-flex mt-3">
+                <div class="figure">
+                    <img src="assets\img\profile-pic-02.jpg" alt="">
+                </div>
+                <div class="user-details">
+                    <h5>Bavid Kames</h5>
+                    <span>United States</span>
+                </div>
+                <div class="time-log">
+                    <span>Mobile : 8715674877</span>
+                </div>
+            </div>
+
+            <div class="user d-flex mt-3 mb-4">
+              <div class="figure">
+                  <img src="assets\img\profile-pic-04.jpg" alt="">
+              </div>
+              <div class="user-details">
+                  <h5>Lavid Emes  </h5>
+                  <span>United States</span>
+              </div>
+              <div class="time-log">
+                  <span>Mobile : 8715674877</span>
+              </div>
+             </div>
           </div>
         </div>
-        <div class="chart-container-2">
-          <canvas id="chart2"></canvas>
-         </div>
-         <hr style="color: black;">
-         <div class="table-responsive">
-          <table class="table  mb-4">
+   </div>
+  </div>
+
+  <div class="row-3">
+    <div class="row">
+      <!-- table -->
+        <div class="col-lg-8 col-md-12 col-sm-12 px-2 mt-4">
+          <div class="t-div">
+            <h3>Referrer</h3>
+          <table id="table-bp" >
+            <thead>
+              <tr> 
+                <th scope="col">Location</th>
+                <th scope="col">Views</th>
+                <th scope="col">Sales</th>
+                <th scope="col">Conversion</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
             <tbody>
-            <tr>
-              <td><i class="fa-solid fa-circle me-1 " style="color: #80E2FF"></i> France <span style="color: #888a98">4260 Sales</span> </td>
-              <td><i class="fa-solid fa-circle me-1" style="color: #F49FA8"></i>Italy <span style="color: #888a98">4260 Sales</span></td>
-             
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-circle me-1" style="color: #FFDF94"></i>Japan <span style="color: #888a98">4260 Sales</span></td>
-              <td><i class="fa-solid fa-circle me-1" style="color: #B5B3FB"></i>Canada <span style="color: #888a98">4260 Sales</span></td>
-              
-            </tr>
-           
+              <tr>
+                <td>google.com</td>
+                <td>3746</td>
+                <td>752</td>
+                <td>43%</td>
+                <td>$19,291</td>
+              </tr>
+              <tr>
+                <td>facebook.com</td>
+                <td>8126</td>
+                <td>728</td>
+                <td>32%</td>
+                <td>$17,638</td>
+                
+              </tr>
+              <tr>
+                <td>twitter.com</td>
+                <td>8836</td>
+                <td>694</td>
+                <td>28%</td>
+                <td>$16,218</td>
+              </tr>
+              <tr>
+                <td>Direct, email, IM</td>
+                <td>1173</td>
+                <td>645</td>
+                <td>24%</td>
+                <td>$14,421</td>
+              </tr>
+              <tr>
+                <td>linkedin.com</td>
+                <td>2739</td>
+                <td>539</td>
+                <td>20%</td>
+                <td>$12,370</td>
+              </tr>
+              <tr>
+                <td>instagram.com</td>
+                <td>2739</td>
+                <td>539</td>
+                <td>20%</td>
+                <td>$12,370</td>
+              </tr>
+              <tr>
+                <td><a style="text-decoration: none ;" href="#">Show More</a></td>
+              </tr>       
             </tbody>
           </table>
-          </div>
         </div>
       </div>
-     </div>
-
-     <div class="col-4">
-      <div class="card radius-10 overflow-hidden w-100 p-3">
-          <div class="card-body1">
-          
-            <div class="text-center">
-              <img class="profile-img " src="assets\img\profile-pic-01.jpg" alt="">
-              <h3 class="text-dark">Nick Herasimenka</h3>
-              <p>United States</p>
-            </div>
-            <div class="text-center">
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-whatsapp"></i>
-            </div>
-          </div>
-          <hr class="text-dark">
-          <div class="profile-note">
-              <table class="table  mb-4">
-                
-                  <tr>
-                    <td><img src="assets\img\profile-pic-01.jpg" style="color: #FFDF94">Japan</td>
-                    
-                  </tr>
-                  <tr>
-                    <td><img src="assets\img\profile-pic-01.jpg" style="color: #FFDF94">Japan <span style="color: #888a98">4260 Sales</span></td>
-                  </tr>
-                
-               
-              </table>
-          </div>
-      </div>
-     </div>
-     <div class="row">
-      <div class="col-8">
-        <div class="t-div">
-        <table id="table-bp" class="p-4">
-          
-          <thead>
-            <tr>
-              <th scope="col">Location</th>
-              <th scope="col">Views</th>
-              <th scope="col">Sales</th>
-              <th scope="col">Conversion</th>
-              <th scope="col">Total</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>google.com</td>
-              <td>3746</td>
-              <td>752</td>
-              <td>43%</td>
-              <td>$19,291</td>
-              
-            </tr>
-            <tr>
-              <td>facebook.com</td>
-              <td>8126</td>
-              <td>728</td>
-              <td>32%</td>
-              <td>$17,638</td>
-              
-            </tr>
-            <tr>
-              <td>twitter.com</td>
-              <td>8836</td>
-              <td>694</td>
-              <td>28%</td>
-              <td>$16,218</td>
-            </tr>
-            <tr>
-              <td>Direct, email, IM</td>
-              <td>1173</td>
-              <td>645</td>
-              <td>24%</td>
-              <td>$14,421</td>
-              
-            </tr>
-            <tr>
-              <td>linkedin.com</td>
-              <td>2739</td>
-              <td>539</td>
-              <td>20%</td>
-              <td>$12,370</td>
-             
-            </tr>
-            <tr>
-              <td>instagram.com</td>
-              <td>2739</td>
-              <td>539</td>
-              <td>20%</td>
-              <td>$12,370</td>
-              
-            </tr>
-            <tr>
-              <td><a style="text-decoration: none ;" href="#">Show More</a></td>
-            </tr>
-          
-          </tbody>
-        </table>
-      </div>
-      </div>
-      <div class="col-4">
-        <div id="video-card" class="card radius-10 overflow-hidden w-100 p-3">
-            <div class="card-body2">
-              <div class="d-flex align-items-center">
-                <table class="table align-items-center mb-3 ">
-                  <tr>
-                    <td >Product Video</td>
-                    <td class=" dropdown-toggle text-dark" style="cursor: pointer; float:right ">Last 6 months </td>                    
-                  </tr>
-                </table>
+      <!-- video card -->
+      
+        <div class="col-lg-4 col-md-12 col-sm-12 px-4">
+          <div class="tbl-video">
+          <div id="video-card" class="card radius-10 overflow-hidden w-100 px-3">
+              <div class="card-body2">
+                <div class="d-flex align-items-center">
+                  <table class="table align-items-center mt-3 mb-3 ">
+                    <tr>
+                      <td >Product Video</td>
+                      <td class=" text-dark" style="cursor: pointer; float:right "><i class="fa-solid fa-ellipsis-vertical"></i></td>                    
+                    </tr>
+                  </table>
+                </div>
+                <div class="yt-video">
+                  <!-- <img src="assets/img/video thumbnail.png" alt=""> -->
+                  <iframe  src="https://www.youtube.com/embed/Oy6hk6Y7VHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
-               <div>
-                <img src="assets/img/video thumbnail.png" alt="">
-               </div>
-            </div>
-        </div>
+          </div>
        </div>
-     </div>
-   </div>
+    </div>
+    </div>
+    </div>
 </div>

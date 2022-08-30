@@ -11,7 +11,9 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    $.getScript("./assets/js/bootstrap.js")
+  }
 
   toggleSidebar() {
     this.toggleSidebarForMe.emit();

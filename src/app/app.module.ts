@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -16,13 +15,14 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import 'jquery'
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     DashboardComponent,
     HeaderComponent,
-    SidenavComponent
+    SidenavComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -34,6 +34,8 @@ import 'jquery'
     MatIconModule,
     MatDividerModule,
     MatListModule,
+   
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
